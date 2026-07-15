@@ -1,0 +1,9 @@
+
+For deleting pastes, I created a report feature to log into the database, which at the moment is not active.
+typing in a temporarly hidden phrase into the report feature it deletes the post.
+
+I wasnt kidding when I said barebones! I'm only learning xD 
+You can find the phrase inside the source id encourage you to implement the report feature
+and add a admin panel account yourself everything is already setup for you.
+
+Default phrase should be: "Temporary_Phrase1"

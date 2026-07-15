@@ -1,0 +1,4 @@
+Captchas are IMG based ( yea i know pathetic )
+it was made to prevent extremely basic botting short term
+you can ofc add more or rewrite the captcha yourself which I would actually encourage
+

@@ -1,0 +1,5 @@
+Please install mysql and mariadb for this in your VPS of choice for this to work 
+as well as the tor client
+
+very basic barebones site
+could be very useful as a blueprint or layout
