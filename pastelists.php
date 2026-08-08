@@ -19,15 +19,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (isset($_POST["showIndex"])) {
         $showIndex = intval($_POST["showIndex"]);
     }
-}
-
-$sql = "SELECT stories.id, stories.content, stories.created_at, users.username 
+} $sql = "SELECT stories.id, stories.content, stories.created_at, users.username 
         FROM stories 
         LEFT JOIN users ON stories.user_id = users.id 
         ORDER BY stories.created_at DESC";
 $result = $conn->query($sql);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,7 +60,6 @@ $result = $conn->query($sql);
 <body>
 <h1>Stories</h1>
 <a class="back-link" href="writepastes.php"> Feel free to Write</a>
-
 <?php
 if ($result && $result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
@@ -91,13 +87,11 @@ if ($result && $result->num_rows > 0) {
             echo "</form>";
             echo "</div>";
         }
-
         echo "</div>";
     }
 } else {
     echo "<p style='margin:20px;'>No stories yet.</p>";
 }
-
 $conn->close();
 ?>
 </body>
